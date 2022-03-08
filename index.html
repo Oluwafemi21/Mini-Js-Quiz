@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link for css stylesheet -->
+    <link href="public/style.css" rel="stylesheet" />
+
+    <title>Ninja Quiz</title>
+  </head>
+  <body class="min-h-screen text-base font-mono">
+    <!-- Header -->
+    <header class="text-center py-14 text-blue tracking-wide">
+      <h1 class="text-4xl md:text-8xl relative">
+        Ninja Quiz
+        <ion-icon
+          name="extension-puzzle-outline"
+          size="large"
+          class="top-0 absolute mx-4"
+        ></ion-icon>
+      </h1>
+      <p class="text-gray-500 mt-8 text-2xl hidden" id="result">
+        You are <span class="text-5xl md:text-7xl text-blue">0%</span> ninja!
+      </p>
+    </header>
+
+    <!-- Question Area -->
+    <section class="bg-blue text-white p-8 md:p-20 h-full">
+      <h3 class="font-medium text-2xl md:text-4xl">On with the questions..</h3>
+      <form class="text-xl">
+        <div class="form-control">
+          1. How do you give a Ninja diretions?
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options"
+              id="Option1"
+              value="A"
+              checked
+            />
+            <label class="form-check-label" for="Option1"
+              >Show them a map</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options"
+              value="B"
+              id="Option2"
+            />
+            <label class="form-check-label" for="Option2"
+              >Don't worry, the ninja will find you</label
+            >
+          </div>
+        </div>
+
+        <div class="form-control">
+          2. If a ninja has 3 apples, then gives one to Mario & one to Yoshi,
+          how many apples does the ninja have left?
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options2"
+              value="A"
+              id="Option3"
+              checked
+            />
+            <label class="form-check-label" for="Option3">1 apple</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options2"
+              id="Option4"
+              value="B"
+            />
+            <label class="form-check-label" for="Option4"
+              >3 apples, and two corpses</label
+            >
+          </div>
+        </div>
+
+        <div class="form-control">
+          3. How do you know when you've met a ninja?
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options3"
+              id="Option5"
+              value="A"
+              checked
+            />
+            <label class="form-check-label" for="Option5"
+              >You'll recognize the outfit</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options3"
+              id="Option6"
+              value="B"
+            />
+            <label class="form-check-label" for="Option6"
+              >The grim reaper will tell you</label
+            >
+          </div>
+        </div>
+
+        <div class="form-control">
+          4. What's a ninja's favourite array method?
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options4"
+              id="Option7"
+              value="A"
+              checked
+            />
+            <label class="form-check-label" for="Option7">forEach()</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="options4"
+              id="Option8"
+              value="B"
+            />
+            <label class="form-check-label" for="Option8">slice()</label>
+          </div>
+        </div>
+
+        <div class="form-control flex items-center justify-center md:flex-row flex-col gap-5 text-center">
+          <input
+            type="submit"
+            value="Submit"
+            class="w-full md:w-auto bg-white text-black px-4 py-2 rounded cursor-pointer hover:bg-transparent ring-2 hover:ring-white hover:text-white"
+          />
+
+          <input
+            type="reset"
+            value="Re-Take"
+            class="w-full md:w-auto hover:bg-white hover:text-black px-4 py-2 rounded cursor-pointer bg-transparent ring-2 ring-white text-white"
+          />
+        </div>
+      </form>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
